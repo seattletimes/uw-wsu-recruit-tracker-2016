@@ -1,0 +1,21 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "almond-alpacas"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2016/sports/uw-wsu-recruit-tracker/"
+    }
+  },
+  "title": "UW Huskies, WSU Cougars 2016 recruit tracker | The Seattle Times",
+  "description": "",
+  "url": "http://projects.seattletimes.com/2016/sports/uw-wsu-recruit-tracker/",
+  "slug": "uw-wsu-recruit-tracker-2016",
+  "tags": [],
+  "image": "http://projects.seattletimes.com/2015/sports/preps-megaboard/assets/megaboard_social.jpg",
+  "production": true,
+  "embedded": false,
+  "sheets": ["1-tt2HyXYgPwT97E7UGC8CHJq0ClXFGqtsvK78v40N5U", "1hP2sf4bX1PuKVi9jhWJkZ0xi8sAEMG9uyW4nErqXTHg"]
+}

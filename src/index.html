@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_adHead.html") %>
+  </head>
+  <body>
+
+    <div class="outer" ng-app="uw-wsu-recruits-2016">
+
+      <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
+      <nav class="top-bar">
+       <a class="logo" href="http://seattletimes.com">
+         <img src="./assets/seattletimes.svg">
+       </a>
+     </nav>
+
+      <img src="./assets/XXXXX.jpg">
+
+      <p class="welcome">Blah blah blah.</p>
+
+      <p style="font-size: 12px;">Last updated: Nov. 11, 2015</p>
+
+      <table>
+        <tr>
+          <td>UW HEADER</td>
+          <td>WSU HEADER</td>
+        </tr>
+        <tr>
+          <td><%= t.include("./_uwtable.html") %></td>
+          <td><%= t.include("./_wsutable.html") %></td>
+        </tr>
+      </table>
+
+    </div>
+
+    <footer>
+      <a class="logo" href="http://seattletimes.com">
+        <img src="./assets/st-logo.png">
+      </a>
+      <a class="share-bottom"></a>
+    </footer>
+
+    <script>
+      var prepData = <%= JSON.stringify(json.prepData) %>;
+    </script>
+    <script src="app.js"></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
