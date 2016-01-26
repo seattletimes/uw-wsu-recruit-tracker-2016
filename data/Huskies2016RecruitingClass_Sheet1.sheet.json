@@ -1,0 +1,174 @@
+[
+  {
+    "uwfirstname": "Daniel",
+    "uwlastname": "Bridge-Gadd",
+    "uwposition": "QB",
+    "uwstars": 3,
+    "uwheight": "6-3",
+    "uwweight": 195,
+    "uwschool": "Paradise Valley HS",
+    "uwhometown": "Phoenix, Ariz.",
+    "uwenrolled": "x"
+  },
+  {
+    "uwfirstname": "Sean",
+    "uwlastname": "McGrew",
+    "uwposition": "RB",
+    "uwstars": 4,
+    "uwheight": "5-7",
+    "uwweight": 175,
+    "uwschool": "St. John Bosco HS",
+    "uwhometown": "Bellflower, Calif."
+  },
+  {
+    "uwfirstname": "Aaron",
+    "uwlastname": "Fuller",
+    "uwposition": "WR",
+    "uwstars": 2,
+    "uwheight": "5-10",
+    "uwweight": 170,
+    "uwschool": "Lovejoy HS",
+    "uwhometown": "Allen, Texas"
+  },
+  {
+    "uwfirstname": "Jacob",
+    "uwlastname": "Kizer",
+    "uwposition": "TE",
+    "uwstars": 3,
+    "uwheight": "6-5",
+    "uwweight": 235,
+    "uwschool": "West Salem HS",
+    "uwhometown": "Salem, Ore."
+  },
+  {
+    "uwfirstname": "Nick",
+    "uwlastname": "Harris",
+    "uwposition": "OL",
+    "uwstars": 2,
+    "uwheight": "6-1",
+    "uwweight": 275,
+    "uwschool": "JSerra Catholic HS",
+    "uwhometown": "San Juan Capistrano, Calif."
+  },
+  {
+    "uwfirstname": "Luke",
+    "uwlastname": "Wattenberg",
+    "uwposition": "OL",
+    "uwstars": 4,
+    "uwheight": "6-5",
+    "uwweight": 275,
+    "uwschool": "JSerra Catholic HS",
+    "uwhometown": "San Juan Capistrano, Calif."
+  },
+  {
+    "uwfirstname": "Levi",
+    "uwlastname": "Onwuzurike",
+    "uwposition": "DE",
+    "uwstars": 3,
+    "uwheight": "6-3",
+    "uwweight": 248,
+    "uwschool": "Allen HS",
+    "uwhometown": "Allen, Texas"
+  },
+  {
+    "uwfirstname": "Amandre",
+    "uwlastname": "Williams",
+    "uwposition": "DE",
+    "uwstars": 3,
+    "uwheight": "6-3",
+    "uwweight": 225,
+    "uwschool": "Tahoma HS",
+    "uwhometown": "Covington, Wash."
+  },
+  {
+    "uwfirstname": "Camilo",
+    "uwlastname": "Eifler",
+    "uwposition": "OLB",
+    "uwstars": 4,
+    "uwheight": "6-2",
+    "uwweight": 219,
+    "uwschool": "Bishop O'Dowd HS",
+    "uwhometown": "Oakland, Calif."
+  },
+  {
+    "uwfirstname": "Brandon",
+    "uwlastname": "Wellington",
+    "uwposition": "OLB",
+    "uwstars": 4,
+    "uwheight": "6-0",
+    "uwweight": 217,
+    "uwschool": "Eastside Catholic HS",
+    "uwhometown": "Sammamish, Wash."
+  },
+  {
+    "uwfirstname": "Isaiah",
+    "uwlastname": "Gilchrist",
+    "uwposition": "CB",
+    "uwstars": 4,
+    "uwheight": "5-11",
+    "uwweight": 190,
+    "uwschool": "Bellevue HS",
+    "uwhometown": "Bellevue, Wash."
+  },
+  {
+    "uwfirstname": "Kentrell",
+    "uwlastname": "Love",
+    "uwposition": "CB",
+    "uwstars": 4,
+    "uwheight": "6-2",
+    "uwweight": 175,
+    "uwschool": "Centennial HS",
+    "uwhometown": "Corona, Calif."
+  },
+  {
+    "uwfirstname": "Taylor",
+    "uwlastname": "Rapp",
+    "uwposition": "S",
+    "uwstars": 3,
+    "uwheight": "6-0",
+    "uwweight": 200,
+    "uwschool": "Sehome HS",
+    "uwhometown": "Bellingham, Wash.",
+    "uwenrolled": "x"
+  },
+  {
+    "uwfirstname": "Van",
+    "uwlastname": "Soderberg",
+    "uwposition": "K/P",
+    "uwstars": 2,
+    "uwheight": "6-0",
+    "uwweight": 200,
+    "uwschool": "Capital HS",
+    "uwhometown": "Olympia, Wash."
+  },
+  {
+    "uwfirstname": "Jordan",
+    "uwlastname": "Chin",
+    "uwposition": "WR",
+    "uwstars": 3,
+    "uwheight": "6-1",
+    "uwweight": 175,
+    "uwschool": "Chaminade HS",
+    "uwhometown": "West Hillis, Calif."
+  },
+  {
+    "uwfirstname": "Byron",
+    "uwlastname": "Murphy",
+    "uwposition": "DB",
+    "uwstars": 4,
+    "uwheight": "5-11",
+    "uwweight": 167,
+    "uwschool": "Saguaro HS",
+    "uwhometown": "Scottsdale, Ariz."
+  },
+  {
+    "uwfirstname": "Kamari",
+    "uwlastname": "Pleasant",
+    "uwposition": "DB",
+    "uwstars": 2,
+    "uwheight": "6-1",
+    "uwweight": 185,
+    "uwschool": "Etlwanda HS",
+    "uwhometown": "Etlwanda, Calif."
+  }
+]

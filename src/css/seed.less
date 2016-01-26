@@ -47,7 +47,7 @@ nav.top-bar {
 }
 
 .outer {
-  max-width: 960px;
+  max-width: 1500px;
   margin: auto;
   padding: 5px;
 }
@@ -72,7 +72,14 @@ nav.top-bar {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+
+  .sidebyside {
+    max-width: 1500px;
+  }
+
+  .tracker {
+    width: 50%;
+  }
 
   th {
     text-transform: uppercase;
@@ -88,16 +95,18 @@ table {
   }
 
   tr:nth-child(odd) td {
-    background: @df-off-white;
 
-    .trackers {
-      padding: 20px;
+    .tracker {
+      background: @df-off-white;
     }
-  };
+  }
 
   td {
-    padding: 6px 8px;
-    font-size: 14px;
+
+    .tracker {
+      padding: 6px 8px;
+      font-size: 14px;
+    }
 
     @media @mobile {
       font-size: 10px;

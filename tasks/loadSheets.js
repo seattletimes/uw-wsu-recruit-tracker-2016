@@ -1,12 +1,9 @@
 /*
-
 Uses the Google Sheets API to pull data from Sheets and load it onto shared
 state. Writes the data out to JSON for later reference. Does not currently
 check for existing data to merge--it does a fresh pull every time.
-
 Sheets must be both A) shared publicly and B) "published to web" before they
 can be accessed by this task.
-
 */
 
 var project = require("../project.json");
@@ -20,7 +17,13 @@ var camelCase = function(str) {
 };
 
 var cast = function(str) {
-  if (typeof str !== "string") return str;
+  if (typeof str !== "string") {
+    if (typeof str.value == "string") {
+      str = str.value;
+    } else {
+      return str;
+    }
+  }
   if (str.match(/^[\d\.,]+$/)) {
     //number
     return Number(str.replace(/,/g, ""));
@@ -49,8 +52,7 @@ module.exports = function(grunt) {
 
     async.each(sheetKeys, function(key, bookDone) {
       sheets({
-        key: key,
-        worksheet: 1
+        key: key
       }, function(err, book) {
         if (err || !book) {
           grunt.fail.warn("Unable to access book for " + key + ", is it 'published' in Sheets?");
@@ -58,50 +60,52 @@ module.exports = function(grunt) {
         }
         //download each worksheet
         async.each(book.worksheets, function(page, pageDone) {
-          page.rows({}, function(err, rows) {
+          sheets.cells({ key: key, worksheet: page.id }, function(err, cells) {
             if (err) {
-              grunt.fail.warn("Couldn't load sheet for " + book.title);
+              grunt.fail.warn("Couldn't load sheet " + page.id + " for " + book.title);
               return pageDone();
             }
-            //don't break on zero-length sheets
-            if (rows.length === 0) return pageDone();
-            //remove extraneous GApps detail
-            rows.forEach(function(row) {
-              delete row.updated;
-              delete row.content;
-              if (typeof row.id == "object") delete row.id;
-              //eliminate empty cells, which get a weird placeholder object
-              for (var key in row) {
-                var prop = row[key];
-                if (typeof prop == "object" && "$t" in prop && prop.$t === "") {
-                  prop = "";
-                }
-                row[key] = cast(prop);
+            cells = cells.cells;
+
+            //get the header row
+            var rowNumbers = Object.keys(cells);
+            var headerNumber = rowNumbers.shift();
+            var headers = cells[headerNumber];
+            var isKeyed = false;
+            for (var cell in headers) {
+              headers[cell] = headers[cell].value;
+              if (headers[cell] == "key") {
+                isKeyed = true;
+              }
+            }
+
+            var output = isKeyed ? {} : [];
+
+            //create the rows
+            rowNumbers.forEach(function(rowNum) {
+              var line = cells[rowNum];
+              var columnNumbers = Object.keys(line);
+              var row = {};
+              columnNumbers.forEach(function(colNum) {
+                var value = line[colNum];
+                var key = headers[colNum];
+                row[key] = cast(value);
+              });
+              if (isKeyed) {
+                output[row.key] = row;
+                delete row.key;
+              } else {
+                output.push(row);
               }
             });
-            //is this a keyed sheet, instead of a numbered list?
-            if ("key" in rows[0]) {
-              var obj = {};
-              rows.forEach(function(row) {
-                obj[row.key] = row;
-                //sheets adds a title for some reason
-                if (row.title == row.key) delete row.title;
-                delete row.key;
-              });
-              rows = obj;
-            }
-            var filename = "data/prepData.sheet.json";
-            grunt.file.write(filename, JSON.stringify(rows, null, 2));
+
+            var filename = "data/" + camelCase(book.title) + "_" + camelCase(page.title) + ".sheet.json";
+            grunt.file.write(filename, JSON.stringify(output, null, 2));
             pageDone();
           });
-        }, function() {
-          //when done with all sheets, continue
-          bookDone();
-        });
+        }, bookDone);
       });
-    }, function() {
-      return done();
-    });
+    }, done);
 
   });
 
