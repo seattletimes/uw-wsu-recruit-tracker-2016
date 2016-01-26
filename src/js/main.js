@@ -5,10 +5,10 @@ require("./lib/ads");
 require("component-responsive-frame/child");
 require("angular");
 
-var app = angular.module("uw-wsu-recruits", []);
+var app = angular.module("uw-wsu-recruits-2016", []);
 
-app.controller("UWController", ["$scope", function($scope) {
-  $scope.recruits = UWData;
+app.controller("uwController", ["$scope", function($scope) {
+  $scope.recruits = huskiesData;
 
   $scope.headers = [
     { title: "Name", short: "last" },
@@ -48,8 +48,8 @@ app.controller("UWController", ["$scope", function($scope) {
   $scope.sortTable($scope.selected);
 }]);
 
-app.controller("WSUController", ["$scope", function($scope) {
-  $scope.recruits = WSUData;
+app.controller("wsuController", ["$scope", function($scope) {
+  $scope.recruits = cougarsData;
 
   $scope.headers = [
     { title: "Name", short: "last" },

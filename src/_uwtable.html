@@ -1,4 +1,4 @@
-<div ng-controller="UWController">
+<div ng-controller="uwController">
 
   <div class="search-container">
     <span class="search">Search:</span>
@@ -15,13 +15,30 @@
       <tr ng-repeat="recruit in recruits | filter:searchText">
         <td class="name">{{recruit.uwfirstname}} {{recruit.uwlastname}}</td>
         <td class="position">{{recruit.uwposition}}</td>
-        <td class="stars">{{recruit.uwstars}}</td>
+        <td class="stars">
+          <span ng-if="recruit.uwstars == 1">
+            &bigstar;
+          </span>
+          <span ng-if="recruit.uwstars == 2">
+            &bigstar; &bigstar;
+          </span>
+          <span ng-if="recruit.uwstars == 3">
+            &bigstar; &bigstar; &bigstar;
+          </span>
+          <span ng-if="recruit.uwstars == 4">
+            &bigstar; &bigstar; &bigstar; &bigstar;
+          </span>
+        </td>
         <td class="height">{{recruit.uwheight}}</td>
         <td class="weight">{{recruit.uwweight}}</td>
         <td class="school">{{recruit.uwschool}}</td>
         <td class="hometown">{{recruit.uwhometown}}</td>
-        <td class="signed">???</td>
-        <td class="enrolled">????</td>
+        <td class="signed">
+          <span ng-if="recruit.uwsigned">&check;</span>
+        </td>
+        <td class="enrolled">
+          <span ng-if="recruit.uwenrolled">&check;</span>
+        </td>
       </tr>
       <tr class="no-results">
         <td colspan=100>No results found
