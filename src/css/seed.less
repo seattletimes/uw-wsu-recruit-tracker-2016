@@ -58,6 +58,17 @@ nav.top-bar {
   }
 }
 
+.table-container {
+  width: 40%;
+  display: inline-block;
+  padding: 30px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    display: block;
+  }
+}
+
 .search-container {
   text-align: center;
   padding-bottom: 10px;
@@ -72,14 +83,8 @@ nav.top-bar {
 
 table {
   border-collapse: collapse;
+  max-width: inherit;
 
-  .sidebyside {
-    max-width: 1500px;
-  }
-
-  .tracker {
-    width: 50%;
-  }
 
   th {
     text-transform: uppercase;
@@ -95,18 +100,12 @@ table {
   }
 
   tr:nth-child(odd) td {
-
-    .tracker {
-      background: @df-off-white;
-    }
+    background: @df-off-white;
   }
 
   td {
-
-    .tracker {
       padding: 6px 8px;
-      font-size: 14px;
-    }
+      font-size: 12px;
 
     @media @mobile {
       font-size: 10px;

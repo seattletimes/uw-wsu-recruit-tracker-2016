@@ -13,10 +13,13 @@ app.controller("uwController", ["$scope", function($scope) {
   $scope.headers = [
     { title: "Name", short: "last" },
     { title: "Position", short: "position" },
+    { title: "Rating", short: "rating" },
+    { title: "Height", short: "height" },
+    { title: "Weight", short: "weight" },
     { title: "School", short: "school" },
-    { title: "Commitment", short: "commitment" },
-    { title: "Offers", short: "offers" },
-    { title: "Ranking", short: "rivals" }
+    { title: "Hometown", short: "hometown" },
+    { title: "Signed?", short: "signed" },
+    { title: "Enrolled?", short: "enrolled" }
   ];
 
   $scope.selected = $scope.headers[0];
@@ -54,10 +57,13 @@ app.controller("wsuController", ["$scope", function($scope) {
   $scope.headers = [
     { title: "Name", short: "last" },
     { title: "Position", short: "position" },
+    { title: "Rating", short: "rating" },
+    { title: "Height", short: "height" },
+    { title: "Weight", short: "weight" },
     { title: "School", short: "school" },
-    { title: "Commitment", short: "commitment" },
-    { title: "Offers", short: "offers" },
-    { title: "Ranking", short: "rivals" }
+    { title: "Hometown", short: "hometown" },
+    { title: "Signed?", short: "signed" },
+    { title: "Enrolled?", short: "enrolled" }
   ];
 
   $scope.selected = $scope.headers[0];
