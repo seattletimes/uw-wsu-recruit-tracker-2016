@@ -6,6 +6,7 @@
 }
 
 @import "seattletimes";
+@import "flexbox";
 
 body {
   font-family: @df-sans;
@@ -58,14 +59,21 @@ nav.top-bar {
   }
 }
 
-.table-container {
-  width: 40%;
-  display: inline-block;
-  padding: 30px;
+.flex-container {
+  .display-flex();
 
-  @media (max-width: 700px) {
+  @media (max-width: 1380px) {
     width: 100%;
     display: block;
+  }
+}
+
+.table-container {
+  .flex(1);
+  padding: 30px;
+
+  table {
+    width: 100%;
   }
 }
 
@@ -84,7 +92,6 @@ nav.top-bar {
 table {
   border-collapse: collapse;
   max-width: inherit;
-
 
   th {
     text-transform: uppercase;
@@ -105,7 +112,7 @@ table {
 
   td {
       padding: 6px 8px;
-      font-size: 12px;
+      font-size: 11px;
 
     @media @mobile {
       font-size: 10px;
