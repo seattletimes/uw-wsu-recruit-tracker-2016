@@ -19,7 +19,6 @@ app.controller("uwController", ["$scope", function($scope) {
     { title: "School", short: "school" },
     { title: "Hometown", short: "hometown" },
     { title: "Signed?", short: "signed" },
-    { title: "Enrolled?", short: "enrolled" }
   ];
 
   $scope.selected = $scope.headers[0];
@@ -63,7 +62,6 @@ app.controller("wsuController", ["$scope", function($scope) {
     { title: "School", short: "school" },
     { title: "Hometown", short: "hometown" },
     { title: "Signed?", short: "signed" },
-    { title: "Enrolled?", short: "enrolled" }
   ];
 
   $scope.selected = $scope.headers[0];

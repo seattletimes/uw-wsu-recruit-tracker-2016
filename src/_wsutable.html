@@ -1,5 +1,9 @@
 <div class="table-container" ng-controller="wsuController">
 
+  <img src="./assets/wsu-logo.jpg" style="float: left;">
+
+  <h3>Washington State Cougars recruits</h3>
+
   <div class="search-container">
     <span class="search">Search:</span>
     <input type="text" ng-model="searchText">
@@ -20,13 +24,13 @@
             &bigstar;
           </span>
           <span ng-if="recruit.wsustars == 2">
-            &bigstar; &bigstar;
+            &bigstar;&bigstar;
           </span>
           <span ng-if="recruit.wsustars == 3">
-            &bigstar; &bigstar; &bigstar;
+            &bigstar;&bigstar;&bigstar;
           </span>
           <span ng-if="recruit.wsustars == 4">
-            &bigstar; &bigstar; &bigstar; &bigstar;
+            &bigstar;&bigstar;&bigstar;&bigstar;
           </span>
         </td>
         <td class="height">{{recruit.wsuheight}}</td>
@@ -35,9 +39,6 @@
         <td class="hometown">{{recruit.wsuhometown}}</td>
         <td class="signed">
           <span ng-if="recruit.wsusigned">&check;</span>
-        </td>
-        <td class="enrolled">
-          <span ng-if="recruit.wsuenrolled">&check;</span>
         </td>
       </tr>
       <tr class="no-results">

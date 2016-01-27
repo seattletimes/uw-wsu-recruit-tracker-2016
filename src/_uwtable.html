@@ -1,5 +1,9 @@
 <div class="table-container" ng-controller="uwController">
 
+  <img src="./assets/uw-logo.jpg" style="float: left;">
+
+  <h3>Washington Huskies recruits</h3>
+
   <div class="search-container">
     <span class="search">Search:</span>
     <input type="text" ng-model="searchText">
@@ -20,13 +24,13 @@
             &bigstar;
           </span>
           <span ng-if="recruit.uwstars == 2">
-            &bigstar; &bigstar;
+            &bigstar;&bigstar;
           </span>
           <span ng-if="recruit.uwstars == 3">
-            &bigstar; &bigstar; &bigstar;
+            &bigstar;&bigstar;&bigstar;
           </span>
           <span ng-if="recruit.uwstars == 4">
-            &bigstar; &bigstar; &bigstar; &bigstar;
+            &bigstar;&bigstar;&bigstar;&bigstar;
           </span>
         </td>
         <td class="height">{{recruit.uwheight}}</td>
@@ -35,9 +39,6 @@
         <td class="hometown">{{recruit.uwhometown}}</td>
         <td class="signed">
           <span ng-if="recruit.uwsigned">&check;</span>
-        </td>
-        <td class="enrolled">
-          <span ng-if="recruit.uwenrolled">&check;</span>
         </td>
       </tr>
       <tr class="no-results">
