@@ -11,7 +11,7 @@
   <table class="tracker">
     <thead>
       <tr>
-        <th ng-repeat="header in headers" class="{{header.short}}" ng-click="sortTable(header)" ng-class="{clickable: header.short !== 'offers', down: selected == header && sortOrder == -1, up: selected == header && sortOrder == 1, selected: header == selected}">{{header.title}}</th>
+        <th ng-repeat="header in headers" class="{{header.short}}" ng-click="sortTable(header)" ng-class="{clickable: header.short !== 'offers', down: selected == header && sortOrder == -1, up: selected == header && sortOrder == 1, selected: header == selected, school: header.short == 'wsuschool', signed: header.short == 'wsusigned'}">{{header.title}}</th>
       </tr>
     </thead>
     <tbody>
@@ -37,7 +37,7 @@
         <td class="school">{{recruit.wsuschool}}</td>
         <td class="hometown">{{recruit.wsuhometown}}</td>
         <td class="signed">
-          <span ng-if="recruit.wsusigned">&check;</span>
+          <span ng-if="recruit.wsusigned">&#10004;</span>
         </td>
       </tr>
       <tr class="no-results">

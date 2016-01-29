@@ -53,6 +53,10 @@ nav.top-bar {
   padding: 5px;
 }
 
+.embedded {
+  max-width: 630px;
+}
+
 .logo-header {
   max-width: 1000px;
   margin: auto;
@@ -89,6 +93,10 @@ nav.top-bar {
   .flex(1);
   padding: 30px;
 
+  @media @tablet {
+    padding: 0;
+  }
+
   table {
     width: 100%;
   }
@@ -117,7 +125,7 @@ table {
     text-align: left;
     font-size: 11px;
 
-    @media @mobile {
+    @media @tablet {
       font-size: 9px;
       padding: 2px 3px;
     }
@@ -131,7 +139,7 @@ table {
       padding: 6px 8px;
       font-size: 11px;
 
-    @media @mobile {
+    @media @tablet {
       font-size: 10px;
       padding: 2px 3px;
     }
@@ -156,7 +164,7 @@ table {
     padding-top: 2px;
     position: absolute;
 
-    @media @mobile {
+    @media @tablet {
       font-size: 8px;
     }
   }
@@ -167,7 +175,7 @@ table {
     padding-top: 2px;
     position: absolute;
 
-    @media @mobile {
+    @media @tablet {
       font-size: 8px;
     }
   }
@@ -179,6 +187,12 @@ table {
 
   &:first-child {
     display: table-row;
+  }
+}
+
+.signed, .school {
+  @media @mobile {
+    display: none;
   }
 }
 
@@ -232,7 +246,7 @@ table {
 }
 
 footer {
-  background: green;
+  background: @df-off-black;
   opacity: 0.95;
   padding: 6px 8px 4px 8px;
   position: relative;
@@ -258,7 +272,7 @@ footer {
     float: right;
 
     label {
-      background: green !important;
+      background: @df-off-black !important;
       color: @df-off-white !important;
     }
   }

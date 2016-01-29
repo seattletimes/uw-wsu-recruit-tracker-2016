@@ -7,7 +7,8 @@
     "uwheight": "6-3",
     "uwweight": 195,
     "uwschool": "Paradise Valley HS",
-    "uwhometown": "Phoenix, Ariz."
+    "uwhometown": "Phoenix, Ariz.",
+    "uwsigned": "Yes"
   },
   {
     "uwfirstname": "Sean",
@@ -23,7 +24,7 @@
     "uwfirstname": "Aaron",
     "uwlastname": "Fuller",
     "uwposition": "WR",
-    "uwstars": 2,
+    "uwstars": 3,
     "uwheight": "5-10",
     "uwweight": 170,
     "uwschool": "Lovejoy HS",
@@ -43,7 +44,7 @@
     "uwfirstname": "Nick",
     "uwlastname": "Harris",
     "uwposition": "OL",
-    "uwstars": 2,
+    "uwstars": 3,
     "uwheight": "6-1",
     "uwweight": 275,
     "uwschool": "JSerra Catholic HS",
@@ -65,7 +66,7 @@
     "uwposition": "DE",
     "uwstars": 3,
     "uwheight": "6-3",
-    "uwweight": 248,
+    "uwweight": 260,
     "uwschool": "Allen HS",
     "uwhometown": "Allen, Texas"
   },
@@ -127,13 +128,14 @@
     "uwheight": "6-0",
     "uwweight": 200,
     "uwschool": "Sehome HS",
-    "uwhometown": "Bellingham, Wash."
+    "uwhometown": "Bellingham, Wash.",
+    "uwsigned": "Yes"
   },
   {
     "uwfirstname": "Van",
     "uwlastname": "Soderberg",
     "uwposition": "K/P",
-    "uwstars": 2,
+    "uwstars": 3,
     "uwheight": "6-0",
     "uwweight": 200,
     "uwschool": "Capital HS",
@@ -144,7 +146,7 @@
     "uwlastname": "Chin",
     "uwposition": "WR",
     "uwstars": 3,
-    "uwheight": "6-1",
+    "uwheight": "6-2",
     "uwweight": 175,
     "uwschool": "Chaminade HS",
     "uwhometown": "West Hillis, Calif."
@@ -154,17 +156,17 @@
     "uwlastname": "Murphy",
     "uwposition": "DB",
     "uwstars": 4,
-    "uwheight": "5-11",
-    "uwweight": 167,
+    "uwheight": "6-0",
+    "uwweight": 170,
     "uwschool": "Saguaro HS",
     "uwhometown": "Scottsdale, Ariz."
   },
   {
     "uwfirstname": "Kamari",
     "uwlastname": "Pleasant",
-    "uwposition": "DB",
-    "uwstars": 2,
-    "uwheight": "6-1",
+    "uwposition": "RB",
+    "uwstars": 3,
+    "uwheight": "6-2",
     "uwweight": 185,
     "uwschool": "Etlwanda HS",
     "uwhometown": "Etlwanda, Calif."

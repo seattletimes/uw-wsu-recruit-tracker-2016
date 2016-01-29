@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_adHead.html") %>
+  </head>
+  <body>
+
+    <responsive-child>
+      <div class="embedded" ng-app="uw-wsu-recruits-2016">
+
+        <div class="flex-container">
+          <%= t.include("./_uwtable.html") %>
+        </div>
+      </div>
+    </responsive-child>
+
+    <script>
+      var huskiesData = <%= JSON.stringify(json.Huskies2016RecruitingClass_Sheet1) %>;
+    </script>
+    <script src="app.js"></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
