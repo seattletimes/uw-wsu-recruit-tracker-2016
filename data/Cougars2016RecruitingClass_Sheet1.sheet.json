@@ -220,7 +220,8 @@
     "wsuheight": "5-11",
     "wsuweight": 169,
     "wsuschool": "Downey HS",
-    "wsuhometown": "Downey, Calif."
+    "wsuhometown": "Downey, Calif.",
+    "wsusigned": "x"
   },
   {
     "wsufirstname": "Mason",
@@ -261,5 +262,14 @@
     "wsuweight": 215,
     "wsuschool": "Helix HS",
     "wsuhometown": "La Mesa, Calif."
+  },
+  {
+    "wsufirstname": "Nilsson",
+    "wsulastname": "Gaisoa",
+    "wsuposition": "OL",
+    "wsuheight": "6-5",
+    "wsuweight": 275,
+    "wsuschool": "Kailua",
+    "wsuhometown": "Kailua, Hawaii"
   }
 ]
